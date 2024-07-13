@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        .navbar{
+            background-color: rgb(130, 214, 243);
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: right;
+            list-style: none;
+            margin: 13px 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: 10px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            padding: 3px 3px;
+            color: rgb(0, 0, 0);
+        }
+        .navbar li a:hover{
+            color: rgb(244, 114, 8);
+        }
+        .search{
+            float: left;
+            color: black;
+            padding: 13px 20px;
+        }
+        .navbar input{
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 180px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">InfoPage</a></li>
+                <li><a href="#">FollowUp</a></li>
+                <li><a href="#">Home</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search anything you need">
+                </div>
+             
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

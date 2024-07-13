@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing for whole background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* header{
+        display: flex;
+        flex-direction: row;
+    } */
+        header::before {
+            height: 100vh;
+            width: 100vw;
+            background: url('https://images.unsplash.com/photo-1639578636074-4ce43d5de3e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.6;
+        }
+
+        .nav-tools {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav-tools li {
+            list-style: none;
+            padding: 3px 2px;
+            margin: 3px;
+        }
+
+        .nav-tools li a {
+            text-decoration: none;
+            color: rgba(236, 0, 0, 0.94);
+        }
+        .nav-tools li a:hover{
+            color: rgb(17, 0, 255);
+            /* background-color: rgb(18, 213, 238); */
+        }
+        p{
+            color: rgb(0, 0, 0);
+            font-size: 18px;
+            text-align: center;
+            text-shadow: antiquewhite;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-tools">
+                <li><a href="http://">Home</a></li>
+                <li><a href="http://">About</a></li>
+                <li><a href="http://">InfoGraphs</a></li>
+                <li><a href="http://">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Details</h3>
+        <details>
+            <summary>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum molestias asperiores atque id, architecto iusto velit blanditiis nesciunt aliquam. Ipsa nihil porro voluptatibus beatae laudantium praesentium eos ratione. Accusamus optio totam, distinctio molestias exercitationem repudiandae.
+                </p>
+            </summary>
+        </details>
+    </section>
+</body>
+
+</html>
