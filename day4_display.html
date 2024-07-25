@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collapseable </title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+        }
+        .box1{
+            font-size: 20px;
+            font-weight: 500;
+            font-family: sans-serif;
+            border: 2px solid black;
+            border-radius: 30px;
+            background: rgba(48, 26, 135, 0.3);
+            backdrop-filter: blur(20px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Box
+    </div>
+    <div class="box2">Show content</div>
+
+    <script>
+        let box1 = document.querySelector('.box1');
+        let box2 = document.querySelector('.box2');
+
+        box2.style.display ='none';
+        box1.onclick = function(){
+            if(box2.style.display =='block'){
+                box2.style.display ='none';
+            }else{
+                box2.style.display ='block';
+            }
+        }
+    </script>
+</body>
+</html>

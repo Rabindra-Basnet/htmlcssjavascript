@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('img/homepageimg.jpg');
+            background-position: center;
+            background-size: cover;
+            color: white;
+            font-family: "Ubuntu Mono", monospace;
+            /* font-weight: 700; */
+            /* height: 450vh;
+            width: 500vw; */
+        }
+
+        /* .header{
+            border: 2px solid rgb(0, 0, 0);
+        } */
+        .left {
+
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 60px;
+            line-height: 12px;
+            font-size: 18px;
+        }
+
+        .left img {
+            width: 76px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            padding: 2px 0px;
+        }
+
+        .mid {
+            text-align: center;
+            /* border: 2px solid green; */
+            display: block;
+            width: 40%;
+            margin: 29px auto;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 19px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 16px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: grey;
+            text-decoration: underline;
+        }
+
+        .right {
+            /* border: 2px solid blue; */
+            display: inline-block;
+            position: absolute;
+            top: 43px;
+            right: 34px;
+        }
+
+        .btn {
+            font-family: "Ubuntu Mono", monospace;
+            margin: 0 9px;
+            background-color: black;
+            color: rgb(255, 255, 255);
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+        .btn:hover {
+            background-color: rgb(74, 74, 74);
+        }
+
+        .container{
+            border: 2px solid green;
+            margin: 106px 80px ;
+            padding: 65px ;
+            width: 29%;
+            border-radius: 28px;
+        }
+        .container h1{
+            text-align: center;
+
+        }
+
+        .form-group input{
+            text-align: center;
+            display: block;
+            width: 380px;
+            padding: 1px;
+            border: 2px solid black;
+            margin: 11px auto;
+            font-size: 25px;
+            border-radius: 8px;
+        }
+
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left">
+            <img src="img/gymlogo-removebg-preview.png" alt="">
+            <div>Fitness</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+
+        </div>
+
+    </header>
+    <!-- <img src="img/3d-gym-equipment.jpg" alt=""> -->
+
+    <div class="container">
+        <h1>Join the best Gym</h1>
+        <form action="noaction.php">
+           <div class="form-group">
+               <input type="text" name="" id="" placeholder="Enter your name">
+           </div>
+           <div class="form-group">
+               <input type="number" name="" id="" placeholder="Enter your age">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" id="" placeholder="Enter your Gender">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" id="" placeholder="Enter your address">
+           </div>
+           <div class="form-group">
+               <input type="text" name="" id="" placeholder="Enter your Email Address">
+           </div>
+           <div class="form-group">
+               <input type="number" name="" id="" placeholder="Enter your Phone Number">
+           </div>
+           <button class="btn">Submit</button>
+        </form>
+    </div>
+
+
+</body>
+
+</html>

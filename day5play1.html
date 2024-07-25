@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box modeling </title>
+    <style>
+        /* p , h3{
+            background-color: antiquewhite;
+        } */
+         *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+         }
+        .container{
+            background-color: rgb(57, 207, 215);
+            border: 2px solid yellowgreen;
+            /* padding: 20px; */
+            /* same goes for margin also  */
+            /* padding-top: 5px;
+            padding-right: 10px;
+            padding-bottom: 12px;
+            padding-left: 8px; */
+
+            /* padding: 5px 10px 12px 8px; this is top right bottom left */
+            padding: 34px 19px; /* top/bottom left/right */
+            margin: 14px 19px;   
+            border-radius: 23px;
+            width: 533px;
+            box-sizing: border-box;
+          
+        }
+    </style>
+</head>
+<body>
+    <h3>
+        this is the moment where i started to learn box modeling in css
+    </h3>
+    <div class="container">
+        <h3>First line</h3>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic pariatur corrupti fuga, voluptatum eveniet ducimus. Deleniti 
+        </p>
+    </div>
+    <div class="container">
+        <h3>Seond line</h3>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic pariatur corrupti fuga, voluptatum eveniet ducimus. Deleniti 
+        </p>
+    </div>
+    <div class="container">
+        <h3>Third line</h3>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod hic pariatur corrupti fuga, voluptatum eveniet ducimus. Deleniti 
+        </p>
+    </div>
+</body>
+</html>

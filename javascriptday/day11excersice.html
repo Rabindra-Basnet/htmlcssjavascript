@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    
+<script>
+//   
+// create a faulty calculator following these steps
+// 1. it takes two numbers as an input from users 
+// 2. it performs the 
+//  + --> -
+//  * --> +
+//  - --> / 
+//  / --> **
+// it performs wrong operations 10% of the whole times
+// 
+
+let random = Math.random();
+console.log(random);
+let a = prompt('Enter a number');
+let c = prompt("Enter an operation");
+let b = prompt('Enter b number');
+let obj ={
+    '+': '-',
+    '*': '+',
+    '-': '/',
+    '/':'**'
+};
+
+if(random > 0.9){
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+}
+else{
+    c = obj[c];
+    // console.log(c)
+    alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
+}
+
+
+</script>
+</body>
+</html>

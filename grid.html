@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using grid</title>
+    <style>
+        body{
+            display: grid;
+            grid-gap: 0.8rem;
+            grid-template-areas: 
+            'head head head head'
+            'aside section section section'
+            'aside section section section'
+            'footer footer footer footer';
+        }
+        header, aside, section, footer{
+            border: 2px solid red;
+
+        }
+        header{
+            grid-area: head;
+            text-align: center;
+        }
+        aside{
+            grid-area: aside;
+            text-align: center;
+        }
+        section{
+            grid-area: section;
+        }
+        footer{
+            grid-area: footer;
+        }
+
+        header{
+            margin: 2px auto;
+            padding: 8px 5px;
+        }
+        aside{
+            margin: 2px auto;
+            padding: 14px 4px;
+        }
+        section{
+            margin: 3px 3px;
+            padding: 2px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, dolores odio sapiente reprehenderit voluptatum voluptas ipsum saepe vero eos porro, cumque dignissimos aspernatur.
+    </header>
+    <aside>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, sit quos. Optio illo molestiae nam libero nobis provident ex vitae repudiandae, eaque aspernatur.
+    </aside>
+    <section>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo non accusamus cum, eveniet consectetur quae sequi suscipit dignissimos aliquid, fugit quam et iusto quo ab. Nobis odio quas assumenda minima animi recusandae!
+    </section>
+    <footer>
+        Copyright &copy 
+        <a href="www.google.com">Google</a>
+    </footer>
+</body>
+</html>

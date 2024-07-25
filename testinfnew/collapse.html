@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for icon we need to have to do this -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        header {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flexbox;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(143, 207, 181, 0.3);
+            backdrop-filter: blur(15px);
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            color: blueviolet;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            /* color: aquamarine; */
+        }
+
+        nav ul li {
+            list-style: none;
+
+        }
+
+        i {
+            margin: 2px;
+            padding: 2px;
+            justify-content: space-between;
+        }
+
+        header details {
+            position: relative;
+        }
+
+        header details ul {
+            position: relative;
+            right: 100%;
+            width: max-content;
+            background-color: #fff;
+            border-radius: 5px;
+
+        }
+
+        header details ul li {
+            padding: 5px 15px;
+            cursor: pointer;
+        }
+
+        /* header details ul li:hover{
+            background-color: #f0f2fb;
+        } */
+        header details summary {
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        button {
+            margin: 0;
+            padding: 0;
+            border: none;
+            background: transparent;
+        }
+
+        button:hover {
+            background-color: #1dfa1d;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <figure>
+
+        </figure>
+        <nav>
+            <details>
+                <summary>
+                    <i class="fa fa-bars">
+                        <menu< /menu>
+                    </i>
+                </summary>
+                <ul>
+                    <li><button>Profile</button></li>
+                    <li><button>Settings</button></li>
+                    <li><button>Sign Out</button></li>
+                </ul>
+            </details>
+        </nav>
+    </header>
+</body>
+
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website designing</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        } 
+        body{
+            display: grid;
+            grid-gap: 0.8rem;
+            grid-template-areas: 
+            'head head head head'
+            'aside section section section'
+            'reviews reviews reviews reviews'
+            'foot foot foot foot';
+        }   
+
+        header{
+            grid-area: head;
+        }
+        aside{
+            grid-area: aside;
+            /* text-align: center; */
+        }
+        #section1{
+            grid-area: section;
+        }
+        #reviews{
+            grid-area: reviews;
+        }
+        footer{
+            grid-area: foot;
+            text-align: center;
+        }
+
+        #head, #aside-tools, #section1, #reviews, footer{
+            border: 2px solid rgb(89, 0, 255);
+        }
+        #head{
+            height: 100%;
+            /* width: 100%; */
+            display: flex;
+            justify-content: space-between;
+            
+            margin: 2px;
+        }
+        #aside-tools{
+            display: flex;
+            height: 500px;
+            width: 200px;
+            margin: 3px 6px;
+            padding: 8px;
+
+        }
+        #aside-tools li{
+            list-style: none;
+            margin: 8px 5px;
+        }
+        #section1{
+            
+            margin-left: 2px;
+        }
+        #section1 .card{
+            margin: 5px;
+            padding: 10px;
+        }
+        .card h3, p{
+            margin: 3px;
+            padding: auto;
+        }
+        #reviews{
+            margin: 6px;
+            padding: 7px;
+            display: flex;
+            height: 100%;
+            /* width: 100%; */
+        }
+        footer{
+            padding: 2px 4px;
+            margin: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <header id="head">
+        <div>
+            Logo
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Services </a></li>
+                <li><a href="">Support</a></li>
+                <li><a href="">Sign In</a></li>
+                <li><a href="">Sign Out</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <label for="search">Search</label>
+            <input type="text" id="search" value="" placeholder="Search you need"> 
+        </div>
+    </header>
+    <aside id="aside-tools">
+        <div class="box">
+            <li><a href="#card1">What is cloud computong</a></li>
+            <li><a href="#card2">Types of cloud computing</a></li>
+            <li><a href="#card3">Discussion about quantum computing</a></li>
+        </div>
+    </aside>
+    <section id="section1">
+        <div id="card1" class="card">
+            <h3>What is cloud computing computing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim eius ipsa voluptatibus hic natus cumque quaerat earum iusto, ut omnis, quas exercitationem ea voluptatum ipsum quae tempore possimus minus.</p>
+        </div>
+        <div id="card2" class="card">
+            <h3>Types of cloud computing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim eius ipsa voluptatibus hic natus cumque quaerat earum iusto, ut omnis, quas exercitationem ea voluptatum ipsum quae tempore possimus minus.</p>
+        </div>
+        <div id="card3" class="card">
+            <h3>Discussion about quantum computing</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet enim eius ipsa voluptatibus hic natus cumque quaerat earum iusto, ut omnis, quas exercitationem ea voluptatum ipsum quae tempore possimus minus.</p>
+        </div>
+    </section>
+    <section id="reviews">
+        <H3>Fill the form</H3>
+        <form action="Nothing">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="Username" id="name">
+            </div>
+            <div>
+                <label for="role">Role:</label>
+                <input type="text" name="UserRole" id="role">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="UserEmail" id="email">
+            </div>
+            <div>
+                <label for="date">Date:</label>
+                <input type="date" name="Date" id="date">
+            </div>
+            <div>
+                <label for="number"> Number: </label>
+                <input type="number" name="Number" id="number">
+            </div>
+            <div>
+                <label for="check">Are you an eligible to vote?: </label>
+                <input type="checkbox" name="eligible" id="check">
+            </div>
+            <div>
+                <label>Gender:</label>
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Male">
+                <label for="Female">Female</label>
+                <input type="radio" name="gender" id="Female">
+                <label for="Others">Other</label>
+                <input type="radio" name="gender" id="Others">
+            </div>
+            <div>
+                <label for="text">Write about yourself:</label>
+                <textarea name="Mytext" id="text" cols="30" rows="10">Review the website</textarea>
+            </div>
+            <div>
+                <label for="Car">CarOptions:</label>
+                <select name="MyCar" id="Car">
+                    <option value="Rollsroyace">Rollsroyace</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mclaren">MClaren</option>
+                    <option value="Mercedes">Mercedes</option>
+                    <option value="Bg">BG</option>
+                </select>
+            </div>
+        </form>
+    
+    </section>
+    <footer>
+        Copyright &copy; www.websitedesigning.com     
+    </footer>
+</body>
+</html>
