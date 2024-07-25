@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes and animations</title>
+    <style>
+        .container {
+            background-color: greenyellow;
+        }
+
+        .box {
+            background-color: green;
+            height: 250px;
+            width: 250px;
+            position: relative;
+            /* animation-name: rabindra; */
+            animation-name: rabindra1;
+            animation-duration: 3s;
+            animation-iteration-count: 3;
+            /* animation-fill-mode: forwards; */
+            /* animation-timing-function: ease-in; */
+            /* animation-delay: 3s; */
+            /* animation-direction: alternate; */
+
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode;
+             */
+             animation: rabindra1 3s ease-in 1s 3 backwards;
+        }
+
+        @keyframes rabindra1 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+        }
+
+        /* @keyframes rabindra {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">This is the box</div>
+    </div>
+</body>
+
+</html>
