@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,4 +37,44 @@
         <div class="box">item-8</div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid Autofit and minmax</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            /* grid-template-columns: 112px 112px 112px; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* justify-content: center; */
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+        }
+        .box{
+            border: 2px solid black;
+            color: white;
+            background-color: rgb(184, 216, 38);
+            padding: 23px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">item-1</div>
+        <div class="box">item-2</div>
+        <div class="box">item-3</div>
+        <div class="box">item-4</div>
+        <div class="box">item-5</div>
+        <div class="box">item-6</div>
+        <div class="box">item-7</div>
+        <div class="box">item-8</div>
+    </div>
+</body>
+>>>>>>> 9ab54d06b43069bbed0bee5cbd391989406dd180
 </html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,4 +50,57 @@
         </div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transform in css</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            background-color: gainsboro;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: green;
+            border: 2px solid black;
+            border-radius: 8px;
+            height: 400px;
+            width: 400px;
+            font-size: 26px;
+            transition: all 1s ease-in-out 0.3s;
+
+        }
+        .box:hover{
+            /* transform: rotate(360deg); */
+            /* transform: skew(40deg); */
+            /* transform: scale(2); */
+
+            /* transform: translateX(123px); */
+            /* transform: translateY(123px); */
+            transform: translate(123px, 123px);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            This is the box
+        </div>
+    </div>
+</body>
+>>>>>>> 9ab54d06b43069bbed0bee5cbd391989406dd180
 </html>

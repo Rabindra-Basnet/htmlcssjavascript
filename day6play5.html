@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,3 +57,62 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More selectors</title>
+    <style>
+        h1 {
+            text-align: center;
+            background-color: aquamarine;
+            color: rgb(19, 32, 120);
+            font-weight: bold;
+        }
+        /* if p is contained by li which is contained by div then */
+        /* div li p{
+            color: blue;
+            font-weight: bold;
+            background-color: aqua;
+
+        } */
+
+        /* if p is right inside the div then this css will ::-webkit-scrollbar-track */
+        /* div > p{
+            color: blue;
+            font-weight: bold;
+            background-color: aqua;
+
+        } */
+         
+        /* if p is right after div or if p is the  next sibling of div */
+        /* div + p{
+            color: rgb(255, 255, 255);
+            background-color: sandybrown;
+            font-weight: bold;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>This is on the topic of selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item">
+                    <p>This is another paragraph inside li</p>
+                </li>
+                <li>this is not affected in the style</li>
+            </ul>
+            <p>This is the innermost paragraph with the row class</p>
+        </div>
+        <p>this is the between paragraph outside the div class row</p>
+    </div>
+    <p>this is the outermost paragraph</p>
+</body>
+
+</html>
+>>>>>>> 9ab54d06b43069bbed0bee5cbd391989406dd180

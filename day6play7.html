@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,3 +95,99 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>before and after pseud selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            font-family: "Roboto Condensed", sans-serif;
+
+
+        }
+
+        header::before {
+            content: " ";
+            background: url('https://images.unsplash.com/photo-1639578636074-4ce43d5de3e2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            opacity: 0.9;
+
+        }
+
+        .navigation {
+            display: flex;
+            font-size: 20px;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        section {
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid red;
+            height: 344px;
+            justify-content: center;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        p {
+            text-align: center;
+
+        }
+
+        /* section::before{
+            content: "This is the comment to unlish the powerful pseudo tools";
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About Us</li>
+                <li class="item">Services</li>
+                <li class="item">Contact us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to Frontend Learning website</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure ducimus ipsa est, exercitationem impedit
+            maiores. Perferendis consequatur iusto, fugit quia modi ducimus minus libero officiis ea sit. Eius aliquid
+            officiis explicabo odio, quos tempora quisquam. Laboriosam exercitationem deleniti ipsum molestiae
+            laudantium distinctio cupiditate iusto perferendis hic impedit tenetur inventore corrupti voluptatum ex eum
+            et, sint quaerat porro quae ab voluptatibus totam culpa tempora? sa quaerat aiores, repellendus, voluptatum
+            accusamus alias!</p>
+    </section>
+    <!-- <hr> -->
+</body>
+
+</html>
+>>>>>>> 9ab54d06b43069bbed0bee5cbd391989406dd180
