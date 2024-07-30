@@ -1,3 +1,2 @@
-Name,Age,City
-John Doe,30,New York
-Jane Smith,25,Los Angeles
+SN,Contract No.,Buyer,Seller,Quantity,Rate,Amount
+1,2024073004000020,59,33,50,690.00,"34,500.00"
