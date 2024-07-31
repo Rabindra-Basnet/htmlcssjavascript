@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selecting id, class, and more</title>
+    <style>
+      div {
+        height: 100%;
+        width: 100;
+      }
+
+      .box {
+        margin: 34px;
+        padding: 34px;
+        height: 34px;
+        width: 34px;
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Rabindra</div>
+      <div class="box">Rabindra</div>
+      <div id="redbox" class="box">Rabindra 2.5</div>
+      <div class="box">Rabindra</div>
+      <div class="box">Rabindra</div>
+      <div class="box">Rabindra</div>
+      <button>click me</button>
+    </div>
+    <script>
+      console.log("Rabin");
+      // for classname -->
+      // let rabindra = document.getElementsByClassName("box");
+      // console.log(rabindra);
+      // rabindra[2].style.backgroundColor = 'red';
+
+      document.getElementById("redbox").style.backgroundColor = 'red';
+
+      // document.querySelector(".box").style.backgroundColor = "green";
+
+      // console.log(document.querySelectorAll(".box"));
+
+      // document.querySelectorAll(".box").forEach((e)=>{
+      //   e.style.backgroundColor ="green"
+      // })
+
+      // document.querySelector("button").addEventListener("click", function () {
+      //   console.log(this);
+      // });
+
+      // console.log(this)
+
+      // console.log(document.getElementsByTagName("div"));
+      // document.querySelectorAll("div").forEach((e) => {
+      //   e.style.backgroundColor = "green";
+      // });
+
+
+      e = document.getElementsByTagName('div')
+      console.log(e)
+
+      console.log(e[3].matches('#redbox'))
+
+      console.log(e[3].closest(".container"))
+      console.log(e[3].closest("html"))
+
+
+
+      document.getElementsByClassName('.container').contains(e[2])
+
+
+      
+    </script>
+  </body>
+</html>
