@@ -36,13 +36,17 @@
       // console.log(rabindra);
       // rabindra[2].style.backgroundColor = 'red';
 
-      document.getElementById("redbox").style.backgroundColor = 'red';
+      document.getElementById("redbox").style.backgroundColor = "red";
 
       // document.querySelector(".box").style.backgroundColor = "green";
 
       // console.log(document.querySelectorAll(".box"));
 
       // document.querySelectorAll(".box").forEach((e)=>{
+      //   e.style.backgroundColor ="green"
+      // })
+      // let boxes = document.getElementsByClassName("box")
+      // Array.from(boxes).forEach((e)=>{
       //   e.style.backgroundColor ="green"
       // })
 
@@ -56,22 +60,16 @@
       // document.querySelectorAll("div").forEach((e) => {
       //   e.style.backgroundColor = "green";
       // });
+      // e = document.getElementsByTagName("div");
+      // console.log(e);
 
+      // console.log(e[3].matches("#redbox"));
 
-      e = document.getElementsByTagName('div')
-      console.log(e)
-
-      console.log(e[3].matches('#redbox'))
-
-      console.log(e[3].closest(".container"))
-      console.log(e[3].closest("html"))
-
-
-
-      document.getElementsByClassName('.container').contains(e[2])
-
-
-      
+      // console.log(e[3].closest(".container"));
+      // console.log(e[3].closest("html"));
+      // 
+      // document.querySelector(".container").contains(e[2]);
+      //   in this context i learned about the dom that makes how to use and select ID, class and matches, tag, contains, closet
     </script>
   </body>
 </html>
