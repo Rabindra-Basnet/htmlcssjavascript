@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulation classlist and class </title>
+    <style>
+        .Rabi{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container red bg-green">
+        <div class="box">This is the class list and class name tutorial</div>
+        <div class="box">This is the class list and class name tutorial</div>
+        <div class="box">This is the class list and class name tutorial</div>
+        <script>
+            let class0 = document.querySelector('.container').classList;
+            console.log(class0);
+            let class01 = document.querySelector('.container').className;
+            console.log(class01);
+            // let class011 = document.querySelector('.container').classList.add('Rabi');
+            // console.log(class011);
+            // let class0111 = document.querySelector('.container').classList.remove('Rabi');
+            // console.log(class0111);
+            let class01111 = document.querySelector('.container').classList.toggle('Rabi');
+            console.log(class01111);
+        </script>
+    </div>
+</body>
+</html>

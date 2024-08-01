@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic YT card</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: black;
+      }
+      .container {
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        padding: 10px;
+        border-radius: 10px;
+        /* background-color: rgb(45, 41, 41); */
+        height: 100px;
+        transition-duration: 0.15s;
+        margin-bottom: 20px;
+      }
+
+      .card:hover {
+        background-color: rgb(45, 41, 41);
+        cursor: pointer;
+      }
+      .card .left p {
+        position: relative;
+        bottom: 40px;
+        left: 120px;
+
+        background-color: black;
+        width: 40px;
+        color: white;
+        font-size: 15px;
+        border-radius: 5px;
+        text-align: center;
+        opacity: 0.6;
+      }
+
+      .card .left img {
+        border-radius: 10px;
+      }
+
+      .right .video-title {
+        margin-top: 5px;
+        font-weight: 600;
+        font-size: 17px;
+        color: white;
+      }
+
+      .right p {
+        color: gray;
+        font-size: 14px;
+      }
+
+      .maincontainer {
+        display: grid;
+      }
+      #form {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        width: 500px;
+        margin: 10px auto;
+        justify-content: space-between;
+      }
+
+      #form input {
+        height: 30px;
+        font-size: 15px;
+        border-radius: 20px;
+        text-align: center;
+        outline: none;
+      }
+
+      #form input:focus {
+        background-color: rgb(171, 160, 160);
+        color: white;
+      }
+
+      #form button {
+        height: 30px;
+        border-radius: 20px;
+        background-color: rgb(87, 87, 253);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        border: none;
+        transition-duration: 0.15s;
+        cursor: pointer;
+      }
+      #form button:hover {
+        background-color: rgb(65, 65, 244);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: white; text-align: center">Youtube Card Generator</h1>
+    <div class="container"></div>
+
+    <script>
+      function createCard(title, cname, views, monthsold, duration, thumbnail) {
+        let container = document.querySelector(".container");
+        let displayview;
+        if (views < 1000) {
+          displayview = views;
+        } else if (views < 1000000) {
+          displayview = views / 1000 + "k";
+        } else if (views > 1000000) {
+          displayview = views / 1000000 + "M";
+        }
+
+        let template = `<div class="card">
+                <div class="left">
+                        <img src="${thumbnail}" alt="">
+                        <p class="duration">${duration}</p>
+                    </div>
+                    
+
+                    <div class="right">
+                        <div class="video-title">${title}</div>
+                        <p>
+                            <span class="cname"> ${cname}</span>
+                            <span class="views">&bull; ${displayview} views</span>
+                            <span class="monthsold">&bull; ${monthsold} months ago</span>
+                        </p>
+                    </div>
+            </div>`;
+
+        container.innerHTML = container.innerHTML + template;
+      }
+
+      // createCard(title,cname,views,monthsold,duration,thumbnail);
+      createCard(
+        "Example Card (your title goes here)",
+        "Channel name",
+        200,
+        8,
+        "33:00",
+        "https://i.ytimg.com/vi/tVzUXW6siu0/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLB0alxLSXCSEPITzWr-XXUiv1oglQ"
+      );
+
+      //to get form data and call create card method
+      function getdata() {
+        let title = document.getElementById("title").value;
+        let cname = document.getElementById("cname").value;
+        let duration = document.getElementById("duration").value;
+        let views = document.getElementById("views").value;
+        let monthsold = document.getElementById("monthsold").value;
+        let thumbnail = document.getElementById("thumbnail").value;
+        createCard(title, cname, views, monthsold, duration, thumbnail);
+      }
+    </script>
+  </body>
+</html>

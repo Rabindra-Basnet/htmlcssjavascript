@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>inserting and removing elements using DOM</title>
+    <style></style>
+  </head>
+  <body>
+    <div class="container">
+      <!--hidden; it is used to hide this box -->
+      <div class="box" style="border: 1px solid #000" data-createdby="Rabi">
+        This is a box
+      </div>
+      <script>
+        //inserting elements with new html elements
+        // let divs = document.createElement("div");
+        // divs.innerHTML = 'Inserted elements <b> Hello </b>'
+        // divs.setAttribute("class", "createdby");
+        // document.querySelector('.container').append(divs)
+
+        // let para = document.createElement('p');
+        // para.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit iure odio illo!'
+        // // para.setAttribute('class', 'createdby');
+        // // console.log( para.setAttribute('class', 'createdby'))
+        // document.querySelector('.container').append(para);
+        // document.querySelector('.container').before(para);
+        // document.querySelector('.container').after(para);
+        // document.querySelector('.container').replaceWith(para);
+
+        // let cont =  document.querySelector('.container');
+        // cont.insertAdjacentHTML("beforeend", '<b>The content is  beforeend typically bad outside</b>')
+        // cont.insertAdjacentHTML("afterend", '<p>The content is afterend typically bad outside</p>')
+        // cont.insertAdjacentHTML("afterbegin", '<h3>The content is afterbegin typically bad outside</h3>')
+        // cont.insertAdjacentHTML("beforebegin", '<h3>The content before begin is typically bad outside</h3>')
+      </script>
+    </div>
+
+    <script>
+      // let a = document.querySelector('.box')
+      // console.log(a)
+      // let ab = document.querySelector('.box').innerHTML
+      // console.log(ab)
+      // let abd = document.querySelector('.box').innerText
+      // console.log(abd)
+      // let abc = document.querySelector('.container').innerText
+      // console.log(abc)
+      // let abcd = document.querySelector('.container').outerHTML
+      // console.log(abcd)
+      // let abcde = document.querySelector('.box').outerHTML
+      // console.log(abcde)
+      // // for nodeName and tagName
+      // let abcdef = document.querySelector('.container').tagName // only applicible for pne type of elements
+      // console.log(abcdef)
+      // let abcdefg = document.querySelector('.tex-sp').nodeName  // applicible for all the elements
+      // console.log(abcdefg)
+
+      // let abcdefgh = document.querySelector('.container').textContent  // applicible for all the elements
+      // console.log(abcdefgh)
+
+      // checks the attribute
+      //         let a = document.querySelector('.box').hasAttribute('style')
+      //         console.log(a)
+      // // get attribute
+      //         let ab = document.querySelector('.box').getAttribute('style')
+      //         console.log(ab)
+      //         //set attribute
+      //         let abc = document.querySelector('.box').setAttribute('style','display:inline')
+      //         console.log(abc)
+      //        //remove attributes
+      //         let abcd = document.querySelector('.box').removeAttribute('style')
+      //         console.log(abcd)
+
+      //         // document.designMode = 'on'
+
+      // let abcde = document.querySelector('.box').dataset;
+      // console.log(abcde)
+
+      // inserting elements
+
+      //   let div = document.createElement("div");
+      //   div.setAttribute("class", "createdby");
+
+      // remove
+      // let node1 =  document.querySelector('.container');
+      // node1.remove()
+
+
+
+
+
+      
+    </script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  background-color: blanchedalmond;
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid red;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.btn {
+  margin: 2px;
+  width: 90px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute;
+ top: 10px;
+ left: 10px;
+ bottom: 10px;
+ right: 10px; */
+  border: 3.5px solid blue;
+  border-radius: 17px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: burlywood;
+  font-size: 0.8rem;
+  text-decoration-line: underline;  
+}
+
+
+.views{
+ padding: 0;
+
+}
+.title{
+  font-size: 26px;
+  text-align: center;
+}
+
+.cName{
+  font-size: 26px;
+  text-align: center;
+}
+
+.date{
+  font-size: 19px;
+}
+
+.thumbnail{
+  height: 150px;
+  width: 250px;
+  border: 2px solid red;
+  position: relative;
+}
+.thumbnail::before{
+  
+}
+.duration{
+  text-align: center;
+  border: 1.5px solid;
+  margin: 1.5px;
+  padding: 1.5px;
+  border-radius: 12px;
+  font-size: 13.1px;
+  width: 30px;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
