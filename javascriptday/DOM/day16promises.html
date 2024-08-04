@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>promisess</title>
+  </head>
+  <body>
+    <script>
+      console.log("hello this is tut of promises");
+
+    //   let prom1 = new Promise((resolve, reject) => {
+    //     let a = Math.random();
+    //     if (a < 0.5) {
+    //       reject("No random number supporting this literal");
+    //     }
+    //     else{
+    //         setTimeout(() => {
+    //           console.log("this is the set done with the given time");
+    //           resolve("Harry");
+    //         }, 3000);
+    //     }
+    //   });
+
+    //   prom1.then((a) => {
+    //     console.log(a);
+    //   }).catch((err)=>{
+    //     console.log(err);  
+    //   });
+
+    //   let prom1 = new Promise((resolve, reject) => {
+    //     let a = Math.random();
+    //     if (a < 0.5) {
+    //       reject("No random number supporting this literal");
+    //     }
+    //     else{
+    //         setTimeout(() => {
+    //           console.log("this is the set done with the given time");
+    //           resolve("Harry");
+    //         }, 3000);
+    //     }
+    //   });
+
+    //   let prom2 = new Promise((resolve, reject) => {
+    //     let a = Math.random();
+    //     if (a < 0.5) {
+    //       reject("No random number supporting this literal 2");
+    //     }
+    //     else{
+    //         setTimeout(() => {
+    //           console.log("this is the set done with the given time 2");
+    //           resolve("Harry 2");
+    //         }, 3000);
+    //     }
+    //   });
+// it prints outs the result whether it is resolved or rejected based on random num with allocated  time 
+    //   let p3 = Promise.all([prom1, prom2])
+    //   p3.then((a)=>{
+    //     console.log(a);   
+    //   }).catch((err)=>{
+    //     console.log(err);  
+    //   })
+// allsettled : waits and prints out all results and show the reason if it is not resolved and also resolved form in array format  
+    //   let p3 = Promise.allSettled([prom1, prom2])
+    //   p3.then((a)=>{
+    //     console.log(a);   
+    //   }).catch((err)=>{
+    //     console.log(err);  
+    //   })
+// race: waits for the promise to resolve/reject and prints out results 
+    //   let p3 = Promise.race([prom1, prom2])
+    //   p3.then((a)=>{
+    //     console.log(a);   
+    //   }).catch((err)=>{
+    //     console.log(err);  
+    //   })
+// any waits for fist promise to fulfill and not rejeect then its results become the outcome and it throws AgregateError if all the promises are rejected
+    //   let p3 = Promise.any([prom1, prom2])
+    //   p3.then((a)=>{
+    //     console.log(a);   
+    //   }).catch((err)=>{
+    //     console.log(err);  
+    //   });
+
+
+    // for promise resolve
+    // const myPromise = new Promise((resolve, reject) =>{
+    //     setTimeout(()=>{
+    //         console.log('2 sec has passed');
+    //         resolve('resolved message')
+            
+    //     }, 2000);
+    // })
+    // myPromise.then((response)=>{
+    //     console.log(`response log: ${response}`); 
+    // })
+
+    // for reject promise.
+    const myPromise = new Promise((resolve, reject) =>{
+        setTimeout(()=>{
+            // console.log('2 sec has passed');
+            reject(new Error("a webpage or resource that does not exist, responds with a 404 error"))    
+        }, 2000);
+    })
+   myPromise.catch((err)=>{
+    console.log(err);  
+   })
+
+
+
+    </script>
+  </body>
+</html>
