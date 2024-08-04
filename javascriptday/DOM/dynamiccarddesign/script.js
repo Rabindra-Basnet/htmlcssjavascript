@@ -1,41 +1,33 @@
-console.log("Dynamic card design is initializing.......");
-let displayviews = document.createElement("div");
-  displayviews.setAttribute("class", "views");
-  displayviews.setAttribute("id", "yt-views");
-  document.querySelector(".container").append(displayviews);
-
-  title = document.createElement("div");
-  title.setAttribute("class", "title");
-  title.setAttribute("id", "titles");
-  document.querySelector(".container").append(title);
-
-  cName = document.createElement("div");
-  cName.setAttribute("class", "cName");
-  cName.setAttribute("id", "yt-name");
-  document.querySelector(".container").append(cName);
-
-  date = document.createElement("div");
-  date.setAttribute("class", "date");
-  date.setAttribute("id", "yt-upload-date");
-  document.querySelector(".container").append(date);
-
-  duration = document.createElement("div");
-  duration.setAttribute("class", "duration");
-  duration.innerHTML ='33.33'
-  duration.setAttribute("id", "yt-duration");
-  document.querySelector(".container").append(duration);
-
-  thumbnail = document.createElement("div");
-  thumbnail.setAttribute("class", "thumbnail");
-  thumbnail.setAttribute("id", "yt-thumbnail");
-  document.querySelector(".container").append(thumbnail);
-
-
-
-
-function createCard(title, cName, views, Date, duration, thumbnail) {
-    
+function createCard(title, cName, views, monthold, duration, thumbnail) {
+  let viewStr;
+  if (views < 1000000) {
+    viewStr = views / 1000 + "K";
+  } else if (views > 1000000) {
+    viewStr = views / 1000000 + "M";
+  } else {
+    viewStr = views / 1000 + "K";
+  }
+  let html = `<div class="card">
+  <div class="image">
+    <img src="${thumbnail}" alt="">
+     <div class="capsule">${duration}</div>
+  </div>
+  <div class="txt">
+    <h1>${title}</h1>
+    <p>${cName} . ${viewStr} views . ${monthold} months ago</p>
+  </div>
+</div>`;
+  setInterval(() => {
+    document.querySelector(".container").innerHTML =
+      document.querySelector(".container").innerHTML + html;
+  }, 1000);
 }
-createCard();
 
-// createCard("Introduction to Backend | Sigma Development Course", "CodeWithHarry", 560000, "31:61", "https://i.ytimg.com/vi/NoWRBo3Uf8E/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDseCMNxPNnml2Myk1G9MS1_2j5g")
+let create =  createCard(
+  "Introduction to Backend | Sigma Development Course `${num}`",
+  "CodeWithHarry",
+  560000,
+  2,
+  "31:61",
+  "https://i.ytimg.com/vi/NoWRBo3Uf8E/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDDseCMNxPNnml2Myk1G9MS1_2j5g"
+);
