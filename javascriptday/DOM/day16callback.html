@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+      
+
+        // function greet(name, callback){
+        //    setInterval(() =>{
+        //    console.log(`hello ${name}`);
+        // }, 1000)
+        //     callback();  
+        // }
+        // greet('john', ()=>{
+        //    setInterval(()=>{
+        //        console.log('callback function executed');
+        //    }, 1000)
+            
+        // })
+
+        // console.log('Harry is programmer')
+        // console.log('Rabi is pro in grammer')
+
+        // setTimeout(() => {
+        //     console.log('This is the timeout method to run this programm in given period')
+        // }, 1200);
+
+        // console.log('This is the end')
+
+        const fn = ()=>{
+            console.log('harry');
+        }
+
+        const callback =(arg, fn)=>{
+             console.log(arg);
+             fn();
+        }
+
+
+        const loadScript = (src, callback)=>{
+            let sc = document.createElement('script');
+            sc.src = src;
+            sc.onload = callback('Nameout' , fn);
+            document.head.append(sc)
+        }
+
+        loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js", callback)
+        // can use on callback
+        // (sc) =>{
+        //     alert('script is loaded on screen')
+        //     alert('script src')
+        // })
+
+
+        // const add = (a, b)=>{
+        //     return a + b
+        // }
+        // const callback = (func, a, b)=>{
+        //     let simplify = func(a,b)
+        //     console.log(simplify);
+            
+        // }
+        // callback(add, 3, 1)
+
+
+        // const cookBacon = ((callback)=>{
+        //     console.log('cooking bacon.....')
+        //     setTimeout(() => {
+        //         console.log("bacon is done in 5 sec")
+        //         callback()
+        //     }, 5000);
+        // });
+        // cookBacon(() =>{
+        //     console.log('Bacon is ready!');  
+        // });
+
+
+
+
+    </script>
+</body>
+</html>
