@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event and Event Handeling</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">Heyy Lorem, ipsum.</div>
+    </div>
+    <button id="btn">Change Content</button>
+
+
+
+    <script>
+
+        let button = document.getElementById('btn');
+
+        button.addEventListener('click', ()=>{
+            alert('Get work done by')
+        })
+        // button.addEventListener('contentmenu', ()=>{
+        //     alert('right clicked')
+        // })
+        button.addEventListener('keydown', (e)=>{
+            console.log(e.key, e.keyCode)
+        })
+    </script>
+</body>
+</html>
