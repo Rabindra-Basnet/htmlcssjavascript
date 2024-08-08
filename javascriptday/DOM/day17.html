@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: content-box;
+        }
+        .container{
+            background-color: rgb(2, 251, 44);
+            height: 50%;
+            width: 50%;
+            display: flex; 
+            margin: 15px auto;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 13px;
+        }
+        button{
+            border: none;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+        }
+        #blink{
+            margin: 10px;
+            padding: 3px;
+            color: #fff;
+        }
+        strong{
+            display: inline;
+            color: rgb(252, 252, 252);
+        margin: .5px;
+            animation: textBlink 1s  ease infinite;
+        }
+        @keyframes textBlink {
+        0%{
+            opacity: .1;
+        }
+        25%{
+            opacity: 0.25;
+        }
+        50%{
+            opacity: 0.5;
+        }
+        75%{
+            opacity: 0.75;
+        }
+        100%{
+            opacity: 0.9;
+        }            
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <button onclick="hecking()">click me</button>
+    <!-- <blink> Hello, did you see blinking effect. </blink> -->
+    </div>
+    
+    <!-- create a hacking simulator which has a green background and it shows these messages with random delay of 1 to 7 secs 
+     
+    initializing hacking....
+    reading your files...
+    password files decteded....
+    sending all passwords and personal files to server....
+    cleaning up....
+
+    the three dots musts blink so that it looks like blinkings
+    -->
+    <script src="day17hecking.js"></script>
+</body>
+</html>
