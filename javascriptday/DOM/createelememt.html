@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="search">
+        <input type="text" id="todo-input" placeholder="Enter a tasks" />
+        <ul class="todo-list"></ul>
+        <button class="btn">Add tasks</button>
+        <button class="rembtn">Delete</button>
+      </div>
+    </div>
+    <script>
+
+        
+      let arr = [1, 2, 3, 4, 5];
+      let ten = document.querySelector(".container");
+      let div;
+      for (const key in arr) {
+        div = document.createElement("div");
+        div.setAttribute("class", "cont");
+        div.innerHTML = `${key}`;
+        ten.append(div);
+        console.log(key);
+        div.style.color = "red";
+      }
+    </script>
+  </body>
+</html>
